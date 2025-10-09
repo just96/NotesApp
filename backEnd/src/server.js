@@ -1,6 +1,8 @@
 import express from "express";
-import notesRoutes from "./routes/notesRoutes.js";
+import cors from "cors";
 import dotenv from "dotenv";
+
+import notesRoutes from "./routes/notesRoutes.js";
 import { connectDB } from "./config/database.js";
 import rateLimiter from "./middleware/rateLimiter.js";
 
@@ -9,6 +11,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// allows every requests from every single url or specific
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 // middleware - to parse JSON bodies: get access req.body
 app.use(express.json());
 app.use(rateLimiter);
