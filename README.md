@@ -1,25 +1,27 @@
-NoteFlow 📓
+## NoteFlow 📓
 
-Aplicação web para criar, editar e organizar notas de forma prática e intuitiva.
+Web application to create, edit, and organize notes in a simple and intuitive way.
 
-Funcionalidades ✨
+## Features ✨
 
-📝 Criar, editar e apagar notas
+📝 **Create, edit, and delete notes**
 
-📱 Organização simples e responsiva (desktop e mobile)
+📱 **Simple and responsive layout (desktop and mobile)**
 
-💾 Persistência de dados com MongoDB
+💾 **Data persistence with MongoDB**
 
-Tecnologias 🛠️
+## Technologies 🛠️
 
-Frontend: ⚛️ React.js, HTML, CSS, Tailwind CSS
-Backend: Node.js, Express.js, MongoDB, Mongoose ODM
-Versionamento: Git, GitHub
+**Frontend:** ⚛️ React.js, HTML, CSS, Tailwind CSS
 
-Instalação 🚀
+**Backend:** Node.js, Express.js, MongoDB, Mongoose ODM
+
+**Version Control:** Git, GitHub
+
+## Installation 🚀
 
 ```bash
-# Clonar repositório
+# Clone the repository
 git clone https://github.com/just96/NotesApp.git
 
 # Frontend
@@ -32,4 +34,4 @@ cd ../backend
 npm install
 npm start
 ```
-Acede à aplicação em http://localhost:3000
+Access the application at http://localhost:3000
